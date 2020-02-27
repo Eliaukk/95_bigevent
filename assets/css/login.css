@@ -19,4 +19,11 @@ img {
 }
 body {
     background:url(/assets/images/login_bg.jpg) no-repeat;
+    background-size: cover;
+}
+.header_logo {
+padding-top: 20px;
+}
+.loginAndRegBox {
+    
 }
