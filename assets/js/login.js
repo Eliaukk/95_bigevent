@@ -31,7 +31,7 @@ $(function () {
             url: 'http://www.liulongbin.top:3007/api/reguser',
             data: $('#form-reg').serialize(),
             success: function (res) {
-                if (res.stutus !== 0) {
+                if (res.status !== 0) {
                     return layer.msg(res.message);
                 }
                 // 跳转到登陆页面
@@ -53,7 +53,7 @@ $(function () {
                 }
                 // 提示登录成功，把相应到身份信息保存到本地
                 layer.msg('登陆成功')
-                localStorage.setItem(res.token)
+                localStorage.setItem('token', res.token)
                 // 跳转到后台
                 location.href = '/index.html'
             }
