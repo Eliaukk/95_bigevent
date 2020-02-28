@@ -11,9 +11,7 @@ html,body,h1,h2,h3,h4,p,ul,li{
 ul {
     list-style: none;
 }
-a {
-    text-decoration: none;
-}
+
 img {
     vertical-align: top;
 }
@@ -25,5 +23,49 @@ body {
 padding-top: 20px;
 }
 .loginAndRegBox {
-    
+    font-size: 14px;
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
+.loginAndRegBox a {
+    color: #333;
+}
+.loginAndRegBox a:hover {
+    color: #777;
+    text-decoration: none;
+}
+.title {
+    height: 60px;
+    background:url(/assets/images/login_title.png) no-repeat center;
+}
+.login-box{
+padding: 0 30px;
+display: none;
+
+}
+.reg-box {
+    padding: 0 30px;
+
+}
+.login-link,.reg-link{
+    display: flex;
+    justify-content: flex-end;
+}
+.layui-form-item {
+    position: relative;
+}
+.layui-form-item .layui-icon {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+.layui-input {
+    padding-left: 35px;
+}
+
+

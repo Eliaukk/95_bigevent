@@ -1,0 +1,33 @@
+{
+    // 基准值
+    "cssrem.rootFontSize": 24,
+    // 保留3位小数
+    "cssrem.fixedDigits": 3,
+    // 是否自动去除0， 例如0.3自动设置为.3
+    "cssrem.autoRemovePrefixZero": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Monokai",
+    "files.autoSave": "off",
+    "editor.fontSize": 20,
+    "emmet.variables": {
+        "lang": "zh-CN"
+    },
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.tokenColorCustomizations": {
+        "comments": "#82e0aa",
+    },
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript"
+    },
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "minapp-vscode.disableAutoConfig": true,
+    "less.compile": {
+        "outExt": ".wxss"
+    }
+}
