@@ -17,7 +17,6 @@ function getUserinfo() {
         type: 'GET',
         url: '/my/userinfo',
         headers: {
-            // 通过 Authorization 字段，把 token 发送给服务器，进行身份认证
             Authorization: localStorage.getItem('token')
         },
 
