@@ -14,12 +14,12 @@ $(function () {
     })
 
     // 登录按钮点击事件
-    $('.login-box a').on('click', function (e) {
+    $('.login-box a').on('click', function () {
         $('.login-box ').hide()
         $('.reg-box').show()
     })
     //注册按钮点击事件
-    $('.reg-box a').on('click', function (e) {
+    $('.reg-box a').on('click', function () {
         $('.login-box').show()
         $('.reg-box').hide()
     })
@@ -28,7 +28,7 @@ $(function () {
         e.preventDefault()
         $.ajax({
             type: 'post',
-            url: 'http://www.liulongbin.top:3007/api/reguser',
+            url: '/api/reguser',
             data: $('#form-reg').serialize(),
             success: function (res) {
                 if (res.status !== 0) {
@@ -45,7 +45,7 @@ $(function () {
         e.preventDefault()
         $.ajax({
             type: 'post',
-            url: 'http://www.liulongbin.top:3007/api/login',
+            url: '/api/login',
             data: $('#form-login').serialize(),
             success: function (res) {
                 if (res.status !== 0) {

@@ -1,10 +1,13 @@
 html,body {
     height: 0;
-    background-color: #ccc;
+    background-color: #f2f3f5;
 }
 body {
     padding: 15px;
 }
 .layui-card {
     background-color: #fff;
+}
+.layui-form {
+    width: 500px;
 }
