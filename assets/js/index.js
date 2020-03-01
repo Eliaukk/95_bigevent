@@ -1,6 +1,7 @@
 $(function () {
     // 页面打开发送请求，生成用户信息
     getUserinfo()
+
     // 实现退出功能
     $('.page_out').on('click', function () {
         var layer = layui.layer
@@ -29,6 +30,9 @@ function getUserinfo() {
             var first = name[0].toUpperCase()
             if (res.data.user_pic) {
                 $('.text-avatar').hide()
+                $('.avatar_container img').attr('src', res.data.user_pic)
+                $('#img').attr('src', res.data.user_pic)
+
             } else {
                 $('.avatar_container img').hide()
                 $('.text-avatar').html(first)
